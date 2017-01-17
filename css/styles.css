@@ -6,3 +6,193 @@ img{
 	width: 100%;
 	display: block;
 }	
+
+body{
+	font-family: "Helvetica";
+}
+
+
+.button{
+	text-align: center;
+	border: 3px #333 solid;
+	background: #fff;
+	outline: 0;
+}
+
+.button_sm{
+	padding: 9px 6px;
+	font-size: 12px;
+}
+
+.button_lg{
+	padding: 21px 12px;
+	font-size: 21px;	
+}
+
+.button_full-width{
+	display: block;
+	width: 100%;
+}
+
+
+.max-container {
+	max-width: 800px;
+	margin: 0 auto;	
+}
+
+/* Exhibit B.1 – .column-container helper class  */
+.column-container{
+	font-size: 0;
+}
+
+.column-container > * {
+	display: inline-block;
+	vertical-align: top;
+	font-size: medium;
+}
+/*...*/
+
+
+/* Exhibit A.1 – Responsive Header Styles (mobile)  */
+.header{
+	font-family: "GillSans";
+	/*background: yellow;*/
+	padding: 50px 0;
+}
+
+.header__title{
+	font-weight: 200;
+	font-size: 30px;
+	margin: 0;
+	letter-spacing: 4px;
+}
+/*...*/
+
+.section__button{
+	max-width: 600px;
+	margin: 12px auto;
+}
+
+.article_synopsis{
+	margin-bottom: 20px;
+}
+.article_synopsis__img-column{
+	width: 100%;
+}
+.article_synopsis__text-column {
+	width: 100%;
+	padding: 0 9px;
+
+}
+
+.user-links{
+	background: #333;
+	color: #fff;
+}
+
+.user-links__column{
+   /* Exhibit B.2.iii - Responsive Column Element(mobile)*/
+	width: 100%;
+	padding: 36px;
+	text-align: center;
+}
+
+.user-links__title{
+	font-weight: 200;
+}
+
+.user-links__column_title{
+	
+}
+
+.footer{
+	background: #ddd;
+	padding: 21px 0 18px 0; 
+}
+
+
+.footer__subscribe-column,
+.footer__follow-column{
+	padding: 18px;
+	
+}
+
+.footer__title {
+	font-size: 24px;
+	font-family: "GillSans";
+	font-weight: 200;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.footer__subscribe-column{
+	width: 100%;
+}
+
+.footer__follow-column{
+	width: 100%;
+}
+
+@media screen and (min-width: 600px){
+	/* Exhibit A.2 – Responsive Header Styles (tablet)  */
+	.header{
+		padding: 60px 0;
+	}
+	
+	.header__title{
+		font-size: 42px;
+	}
+	/*...*/
+	
+	.article_synopsis__img-column{ width: 60%; }
+	.article_synopsis__text-column{ 
+		width: 40%; 
+	}
+
+	.article_synopsis__text-column h3{
+		margin: 0;
+	}	
+	
+	.user-links__column{
+   	/* Exhibit B.2.ii - Responsive Column Element(tablet)*/
+
+		width: 50%;
+	}
+	
+	
+	.footer{
+		padding-left: 18px;
+	}
+	
+
+	.footer__subscribe-column{	
+		width: 66.67%;
+		border-left: 1px solid #aaa;
+	}
+
+	.footer__follow-column{		
+		width: 33.33%;
+		border-left: 1px solid #aaa;
+	}
+
+
+	
+}
+
+@media screen and (min-width: 1000px){
+	/* Exhibit A.3 – Responsive Header Styles (desktop)  */
+	.header{
+		padding: 70px 0;
+	}
+	.header__title{
+		font-size: 54px;
+	}
+	/*...*/
+
+	.user-links__column{
+   	/* Exhibit B.2.iii - Responsive Column Element(desktop)*/
+		width: 25%;
+	}
+}
+
+
